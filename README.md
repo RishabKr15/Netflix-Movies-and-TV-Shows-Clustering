@@ -14,50 +14,46 @@ To ensure data quality and meaningful insights, we performed several preprocessi
 
 ### Exploratory Data Analysis (EDA)
 
-EDA was conducted to understand content distribution, trends, and relationships within the dataset. Key analyses included:
+* EDA was conducted to understand content distribution, trends, and relationships within the dataset. Key analyses included:
 
-Distribution of movies vs. TV shows
+* Distribution of movies vs. TV shows
 
-Most common genres and directors
+* Most common genres and directors
 
-Content availability by country
+* Content availability by country
 
-Trends in content release over the years
+* Trends in content release over the years
 
 These insights helped shape feature engineering for clustering.
 
 ### Clustering Approach
-To create meaningful clusters, we employed NLP and machine learning techniques:
+ * To create meaningful clusters, we employed NLP and machine learning techniques:
 
 * Text Vectorization:
 
-TF-IDF Vectorizer was applied to categorical and textual attributes (director, cast, country, genre, rating, and description) to convert them into numerical representations.
+* TF-IDF Vectorizer was applied to categorical and textual attributes (director, cast, country, genre, rating, and description) to convert them into numerical representations.
 
 * Dimensionality Reduction:
 
-* Principal Component Analysis (PCA) was used to reduce high-dimensional feature space, improving clustering efficiency.
+* Truncated SVD was used to reduce high-dimensional feature space, improving clustering efficiency.
 
-* Clustering Algorithms Used:
+### Clustering Algorithms Used:
 
-K-Means Clustering
+* K-Means Clustering
 
-Agglomerative Hierarchical Clustering
+* Agglomerative Hierarchical Clustering
 
-Choosing the Optimal Number of Clusters:
+### For Choosing the Optimal Number of Clusters:
 
-Elbow Method (Inertia-based evaluation)
+* Elbow Method (Inertia-based evaluation)
 
-Silhouette Score (Cluster quality assessment)
+* Silhouette Score (Cluster quality assessment)
 
-Dendrogram Analysis (Hierarchical clustering structure)
+* Dendrogram Analysis (Hierarchical clustering structure)
 
 ### Recommendation System
-A content-based recommendation system was developed using:
-
-Cosine Similarity Matrix: Measures similarity between content based on clustered feature vectors.
-
+A content-based recommendation system was developed using Cosine Similarity Matrix that measures similarity between content based on clustered feature vectors.
 Personalized Suggestions: The system suggests movies/TV shows based on user viewing history and content similarity.
-
 This enhances the Netflix user experience by offering tailored recommendations.
 
 ### Conclusion
