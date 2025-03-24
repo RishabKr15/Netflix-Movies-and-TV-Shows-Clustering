@@ -1,4 +1,6 @@
 # Netflix-Movies-and-TV-Shows-Clustering
+![Netflix-Symbol](https://github.com/user-attachments/assets/0fd170a8-0b3e-4cd9-8d59-cffe673a7ddd)
+
 ## Project Overview
 The goal of this project is to analyze a dataset of TV shows and movies available on Netflix as of 2019. By leveraging Natural Language Processing (NLP) techniques and clustering algorithms, we aim to group similar content and develop a recommendation system. This system will enhance the user experience by suggesting relevant movies and TV shows, ultimately reducing subscriber churn.
 Netflix, as the largest online streaming service with over 200 million subscribers, constantly improves its recommendations to retain users. This project contributes to that goal by identifying content clusters and improving personalization.
